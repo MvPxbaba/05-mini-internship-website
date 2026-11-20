@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML Internship Portfolio Website showcasing skills, assignments and multimedia resources.">
+  <meta name="author" content="Abdul Rehman Yousafe">
+  <title>Internship Website</title>
+
+  <!-- Base target for links -->
+  <base target="_self">
+
+  <!-- Favicon / External resource link -->
+  <link rel="icon" href="banner.png" type="image/png">
+</head>
+<body spellcheck="true">
+
+  <!-- Fallback message -->
+  <noscript>
+    <p><strong>Notice:</strong> This website runs entirely on pure HTML. JavaScript is neither used nor required.</p>
+  </noscript>
+
+  <!-- Website Header -->
+  <header>
+    <h1>Web Development Internship Portfolio</h1>
+    <p>Comprehensive HTML Final Assessment &mdash; <data value="Day-05">Day 05</data></p>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav aria-label="Main Navigation">
+    <a href="#home" title="Go to Home section">Home</a> |
+    <a href="#about" title="Go to About section">About</a> |
+    <a href="#skills" title="Go to Skills section">Skills</a> |
+    <a href="#training" title="Go to Training section">Training</a> |
+    <a href="#assignments" title="Go to Assignments section">Assignments</a> |
+    <a href="#media-resources" title="Go to Media section">Media</a> |
+    <a href="#faq" title="Frequently Asked Questions">FAQ</a> |
+    <a href="#contact" title="Go to Contact section">Contact</a>
+  </nav>
+  <hr>
+
+  <!-- Main Content Container -->
+  <main>
+
+    <!-- SECTION 1: HOME -->
+    <section id="home" class="portfolio-section" data-section="home">
+      <h2>Welcome to My Internship Portal</h2>
+      <p>
+        Hello and welcome! This website serves as the final submission for my 5-day web development foundation training.
+        Over the past five days, I learned how to structure web documents using clean, semantic, and accessible markup.
+      </p>
+      
+      <!-- Responsive Picture element using thumbnail -->
+      <figure>
+        <picture>
+          <source
+            srcset="html-course.webp"
+            type="image/webp">
+          <img
+            src="html-course.jpg"
+            alt="HTML Training Course"
+            width="400">
+          </picture>
+        <figcaption>Figure 1: Introduction to HTML Training</figcaption>
+      </figure>
+    </section>
+    <hr>
+
+    <!-- SECTION 2: ABOUT -->
+    <section id="about" class="portfolio-section" data-section="about">
+      <h2>About Me &amp; Internship Overview</h2>
+      
+      <div>
+        <!-- Profile Image with alt, draggable attribute, and dimensions -->
+        <img src="profile.png" alt="Intern Profile Photo" width="150" height="150" draggable="false">
+
+        <div>
+          <h3>Intern Profile</h3>
+          <p>
+            I am a student trainee participating in the intensive web development track organized by 
+            <ruby translate="no">Bloomrix <rp>(</rp><rt>bloom-rix</rt><rp>)</rp></ruby> Learning Program. 
+            My primary goal has been to master front-end foundational technologies, starting with semantic document structuring.
+          </p>
+          <p>
+            Connect on LinkedIn:
+            <a href="https://www.linkedin.com/in/abdul-rehman-yousafe" target="_blank" rel="noopener"><code>https://www.linkedin.com/<wbr>in/<wbr>abdul-rehman-yousafe</code></a>
+          </p>
+          <p>
+            Key Concept: <dfn title="Semantic HTML gives meaning to web content rather than just visual appearance.">Semantic HTML</dfn> 
+            ensures that web pages are accessible to screen readers, search engines, and all user agents.
+          </p>
+          <p>
+            Quick Note: <mark>HTML5 standard</mark> replaces old formatting tags with structural semantics.
+            <del>Old font tags</del> <ins>Modern semantic elements</ins> are now preferred.
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Internship Timeline &amp; Progress</h3>
+      <p>
+        Program Started: <time datetime="2026-11-16">November 16, 2026</time><br>
+        Final Assessment Date: <time datetime="2026-11-20">November 20, 2026</time>
+      </p>
+
+      <p>Overall Program Completion:</p>
+      <!-- Progress indicator -->
+      <label for="course-progress">Curriculum Completion:</label>
+      <progress id="course-progress" value="100" max="100">100%</progress> <span>(100% Complete)</span>
+
+      <p>Internal Assessment Score:</p>
+      <!-- Meter indicator -->
+      <label for="eval-meter">Practical Score:</label>
+      <meter id="eval-meter" min="0" max="100" low="50" high="80" optimum="95" value="92">92 out of 100</meter> <span>(92/100 - Grade A)</span>
+
+      <blockquote>
+        <p><q>Clean markup is the backbone of every fast, accessible, and maintainable website.</q></p>
+        <cite>&mdash; Web Standards Handbook</cite>
+      </blockquote>
+    </section>
+    <hr>
+
+    <!-- SECTION 3: SKILLS -->
+    <section id="skills" class="portfolio-section" data-section="skills">
+      <h2>Technical Skills Acquired</h2>
+      <p>During this training, I practiced multiple areas of HTML authoring:</p>
+
+      <!-- Unordered List -->
+      <ul>
+        <li><strong>Document Structure:</strong> Doctype, head, meta tags, and body layout.</li>
+        <li><strong>Text Formatting:</strong> Headings, paragraphs, preformatted blocks, quotations, and abbreviations like <abbr title="HyperText Markup Language">HTML</abbr>.</li>
+        <li><strong>Navigation &amp; Hyperlinks:</strong> Relative links, anchor targets, and external resources.</li>
+        <li><strong>Data Representation:</strong> Tabular data, nested lists, and description lists.</li>
+        <li><strong>User Input &amp; Validation:</strong> Forms, inputs, datalists, and custom controls.</li>
+        <li><strong>Multimedia:</strong> Audio, video playback, caption tracks, and responsive images.</li>
+      </ul>
+
+      <h3>Terminologies &amp; Definitions</h3>
+      <!-- Description List -->
+      <dl>
+        <dt><strong>DOM</strong></dt>
+        <dd>Document Object Model &mdash; the structural tree representation of HTML elements in the browser.</dd>
+        
+        <dt><strong>Attribute</strong></dt>
+        <dd>Additional values configured inside an opening tag to modify its behavior or meaning.</dd>
+
+        <dt><strong>Accessibility (a11y)</strong></dt>
+        <dd>The practice of making websites usable for people with diverse abilities and screen-reader devices.</dd>
+      </dl>
+
+      <h3>Code Syntax Reference</h3>
+      <p>Formula for calculating score percentage: <var>P</var> = (<var>marks_obtained</var> / <var>total_marks</var>) &times; 100</p>
+      <p>Press <kbd>Ctrl</kbd> + <kbd>U</kbd> in your browser to view page source.</p>
+      
+      <pre><code>&lt;!-- Basic HTML5 Document Structure --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <p>System sample output: <samp>Compilation successful: 0 errors detected.</samp></p>
+    </section>
+    <hr>
+
+    <!-- SECTION 4: TRAINING -->
+    <section id="training" class="portfolio-section" data-section="training">
+      <h2>5-Day Training Schedule &amp; Course Outline</h2>
+
+      <!-- Course / Schedule Table -->
+      <table border="1">
+        <caption>Table 1: Internship Weekly Schedule</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML Basics</td>
+            <td>2 Hours</td>
+          </tr>
+
+          <tr>
+            <td>Tuesday</td>
+            <td>HTML Forms</td>
+            <td>2 Hours</td>
+          </tr>
+
+          <tr>
+            <td>Wednesday</td>
+            <td>Semantic HTML</td>
+            <td>2 Hours</td>
+          </tr>
+
+          <tr>
+            <td>Thursday</td>
+            <td>HTML Media</td>
+            <td>2 Hours</td>
+          </tr>
+
+          <tr>
+            <td>Friday</td>
+            <td>Complete Project</td>
+            <td>2 Hours</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <th colspan="2">Total Weekly Hours</th>
+            <td>10 Hours</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <hr>
+
+    <!-- SECTION 5: ASSIGNMENTS -->
+    <section id="assignments" class="portfolio-section" data-section="assignments">
+      <h2>Completed Daily Assignments</h2>
+      <p>Step-by-step assignments completed during the program:</p>
+
+      <!-- Ordered List -->
+      <ol>
+        <li>
+          <strong>Assignment 01:</strong> Personal bio and basic layout with text formatting (bold, italic, sub<sub>2</sub>, sup<sup>2</sup>).
+        </li>
+        <li>
+          <strong>Assignment 02:</strong> Multi-column course schedule table with headers, caption, and lists.
+        </li>
+        <li>
+          <strong>Assignment 03:</strong> Student registration form with validation patterns and fieldsets.
+        </li>
+        <li>
+          <strong>Assignment 04:</strong> Interactive media player embedding video, audio, and web iframe.
+        </li>
+        <li>
+          <strong>Assignment 05:</strong> Full multi-section internship portfolio website (this project).
+        </li>
+      </ol>
+
+      <!-- Template Element demonstration -->
+      <template id="assignment-card-template">
+        <article class="assignment-card">
+          <h4>Future Assignment Slot</h4>
+          <p>Placeholder for upcoming project assessments.</p>
+        </article>
+      </template>
+
+      <!-- Editable review notes element and hidden message demonstration -->
+      <div tabindex="0" contenteditable="false">
+        <small><strong>Note:</strong> Content above is verified according to the assessment syllabus.</small>
+        <p hidden>Archived note: All tests passed on Day 05.</p>
+      </div>
+    </section>
+    <hr>
+
+    <!-- SECTION: MEDIA RESOURCES -->
+    <section id="media-resources" class="portfolio-section" data-section="media">
+      <h2>Multimedia &amp; Embedded Resources</h2>
+      <p>Demonstrating audio playback, video with subtitle tracks, iframe embedding, and external objects:</p>
+
+      <!-- Audio Section -->
+      <article>
+        <h3>1. Audio Greeting</h3>
+        <p>Listen to the introductory welcome message:</p>
+        <audio controls preload="metadata">
+          <source src="audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+
+
+      <!-- Video Section -->
+      <article>
+        <h3>2. Video Demonstration</h3>
+        <p>Watch the training overview video with captions:</p>
+        <video width="480" height="270" controls poster="video-thumbnail.jpg" preload="metadata">
+          <source src="video.mp4" type="video/mp4">
+          <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English Subtitles" default>
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+
+      <!-- Iframe Section -->
+      <article>
+        <h3>3. Embedded Frame (Iframe)</h3>
+        <p>External reference page embedded safely:</p>
+        <iframe src="iframe.pdf" type="application/pdf" width="400" height="250" loading="lazy">
+        <p>Your browser does not support iframes.</p>
+        </iframe>
+      </article>
+
+
+      <!-- Object & Embed elements -->
+      <article>
+        <h3>4. Embedded Document (Object &amp; Embed)</h3>
+        <p>Task PDF displayed via native object container:</p>
+        <object data="object.pdf" type="application/pdf" width="400" height="250">
+          <embed src="embedded.jpg" type="image/jpeg" width="400" height="250">
+          <p>Unable to display PDF. <a href="object.pdf" target="_blank" rel="noopener">Click here to view PDF</a>.</p>
+        </object>
+      </article>
+    </section>
+    <hr>
+
+    <!-- SECTION: FAQ -->
+    <section id="faq" class="portfolio-section" data-section="faq">
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      
+      <!-- Details and Summary elements -->
+      <details>
+        <summary><strong>What is the purpose of this website?</strong></summary>
+        <p>This website brings together all concepts taught in Days 1 through 5 of the HTML internship into a single cohesive project.</p>
+      </details>
+
+      <details>
+        <summary><strong>Was CSS or JavaScript used?</strong></summary>
+        <p>No. In accordance with the assignment guidelines, this project is built using 100% pure HTML markup with no CSS and no JavaScript.</p>
+      </details>
+
+      <details>
+        <summary><strong>How many tags and attributes are used?</strong></summary>
+        <p>This project implements over 45 unique HTML tags and more than 35 unique attributes, meeting and exceeding all requirements.</p>
+      </details>
+    </section>
+    <hr>
+
+    <!-- SECTION 6: CONTACT -->
+    <section id="contact" class="portfolio-section" data-section="contact">
+      <h2>Contact &amp; Feedback Form</h2>
+      <p>Feel free to send questions, feedback, or verification queries using the form below:</p>
+
+      <!-- Complete Form with Fieldsets, Legends, 8+ Input Types, Datalist, Select, Textarea -->
+      <form action="#" method="post" autocomplete="on">
+        
+        <!-- Fieldset 1: Personal Details -->
+        <fieldset>
+          <legend><strong>Personal Information</strong></legend>
+
+          <label for="full-name">Full Name: *</label><br>
+          <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required minlength="3" maxlength="50" autocomplete="name"><br><br>
+
+          <label for="user-email">Email Address: *</label><br>
+          <input type="email" id="user-email" name="userEmail" placeholder="name@example.com" required autocomplete="email"><br><br>
+
+          <label for="user-phone">Phone Number:</label><br>
+          <input type="tel" id="user-phone" name="userPhone" placeholder="+92 300 1234567" pattern="^\+?[0-9\s\-]{7,15}$" title="Enter a valid phone number"><br><br>
+
+          <label for="contact-date">Preferred Meeting Date:</label><br>
+          <input type="date" id="contact-date" name="contactDate" min="2026-11-20" max="2026-12-31">
+        </fieldset>
+
+        <!-- Fieldset 2: Assessment Preferences -->
+        <fieldset>
+          <legend><strong>Evaluation Preferences</strong></legend>
+
+          <label for="evaluation-score">Expected Rating (1 to 10):</label><br>
+          <input type="number" id="evaluation-score" name="evalScore" min="1" max="10" step="1" value="9"><br><br>
+
+          <label for="theme-color">Badge Accent Color:</label><br>
+          <input type="color" id="theme-color" name="themeColor" value="#0056b3"><br><br>
+
+          <label for="satisfaction-range">Internship Satisfaction (0-100):</label><br>
+          <input type="range" id="satisfaction-range" name="satisfaction" min="0" max="100" value="95"><br><br>
+
+          <label for="city-input">Select City:</label><br>
+          <input type="text" id="city-input" name="city" list="city-list" placeholder="Choose or type city">
+          <!-- Datalist -->
+          <datalist id="city-list">
+            <option value="Karachi">
+            <option value="Lahore">
+            <option value="Islamabad">
+            <option value="Faisalabad">
+            <option value="Rawalpindi">
+          </datalist><br><br>
+
+          <label for="inquiry-type">Inquiry Topic: *</label><br>
+          <select id="inquiry-type" name="inquiryType" required>
+            <option value="" disabled selected>-- Select an option --</option>
+            <optgroup label="Academic">
+              <option value="assessment">Final Assessment</option>
+              <option value="curriculum">Course Syllabus</option>
+            </optgroup>
+            <optgroup label="General">
+              <option value="feedback">General Feedback</option>
+              <option value="certification">Certificate Issuance</option>
+            </optgroup>
+          </select><br><br>
+
+          <label><strong>Gender:</strong></label><br>
+          <input type="radio" id="gender-male" name="gender" value="male" checked>
+          <label for="gender-male">Male</label>
+          <input type="radio" id="gender-female" name="gender" value="female">
+          <label for="gender-female">Female</label><br><br>
+
+          <label for="upload-file">Upload Supporting Document (Optional):</label><br>
+          <input type="file" id="upload-file" name="attachment" accept=".pdf,.doc,.docx"><br><br>
+
+          <input type="checkbox" id="subscribe-news" name="subscribe" value="yes" checked>
+          <label for="subscribe-news">Subscribe to training newsletter and updates</label>
+        </fieldset>
+
+        <!-- Fieldset 3: Message Content -->
+        <fieldset>
+          <legend><strong>Your Message</strong></legend>
+          <label for="message-box">Comments &amp; Feedback: *</label><br>
+          <textarea id="message-box" name="message" rows="5" cols="45" placeholder="Write your message here..." required autocomplete="street-address"></textarea>
+        </fieldset>
+
+        <!-- Form Actions -->
+        <p>
+          <input type="submit" value="Submit Form">
+          <input type="reset" value="Reset Fields">
+          <button type="button" title="Interactive button">Save Draft</button>
+        </p>
+      </form>
+    </section>
+    <hr>
+
+    <!-- Dialog Notice Demonstration -->
+    <aside>
+      <h4>Important Internship Notice</h4>
+      <dialog open>
+        <p><strong>Evaluation Status:</strong> Final review in progress. All sections are fully documented using HTML5 standards.</p>
+      </dialog>
+    </aside>
+    <hr>
+
+  </main>
+
+  <!-- Website Footer with Address and Contact Details -->
+  <footer>
+    <h2>Contact Information</h2>
+    <address>Internship Training Center
+      <br>Lahore, Pakistan
+      <br>Email: <a href="mailto:training@example.com">training@example.com</a>
+      <br>Phone: +92 300 1234567
+    </address>
+    <p><small>&copy; 2026 HTML Training Program. All Rights Reserved.</small></p>
+  </footer>
+</body>
+</html>
